@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    height: 70px;
+    background-color: #1F2937 ;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header text {
+    font-size: 24px;
+}
+
+.hero{
+    display: flex;
+    background-color: #1F2937 ;
+    color: white;
+}
+img {
+    height: 200px;
+    width: 300px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footer {
+    height: 70px;
+    background-color: #1F2937 ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
