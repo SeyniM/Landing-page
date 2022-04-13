@@ -1,7 +1,6 @@
 body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
@@ -69,16 +68,19 @@ body {
     border-radius: 8px; 
 }
 
-img {
+.hero img {
     height: 200px;
     width: 400px;
 }
+
+
 
 .info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    padding: 30px;
+    gap: 20px;
 }
 
 .info .title{
@@ -87,32 +89,58 @@ img {
 }
 
 .cubes{
+    width: 800px;
     display: flex;
-    gap: 52px;
+    padding: 30px;
+    gap: 40px;
 }
 
-
-.cube-1 {
+.cube-1,.cube-2,.cube-3,.cube-4{
     display: flex;
     flex-direction: column;
-    border-color: #1F2937;
-    border-radius: 10px;
-    border-width: 10px;
-}
-.rounded-cube{
-    border-radius: 10px;
-    border-width: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 0 1 180px;
 }
 
-
-
-.text{
+.cubes .text{
     text-align: center;
 }
 
+.rounded-cube{
+    margin: 0;
+    padding: 0;
+    height: 160px;
+    width: 160px;
+    background-color: white;
+    border: 3px solid rgb(43, 142, 255);
+    border-radius: 7px;
+}
+
+
 .quote{
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+} 
+
+.quote .inspiring{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 20px;
+    flex-wrap: wrap;
+    text-align: center;
 }
+
+.quote .signature {
+    align-self: end;
+    font-weight: bold;
+}
+
 
 .action{
     display: flex;
@@ -128,7 +156,10 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px 30px;
+    flex: 0 1 auto;
 }
 
 .action .container .text {
@@ -137,8 +168,6 @@ img {
     flex-direction: column;
     text-align: left;
     gap: 6px;
-    flex-shrink: 0;
-    padding-left: 140px;
 }
 
 .action button {
@@ -156,10 +185,10 @@ img {
 }
 
 .footer {
-    height: 70px;
     background-color: #1F2937 ;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px ;
 }
