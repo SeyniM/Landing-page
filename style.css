@@ -7,6 +7,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
 .header{
     height: 70px;
     background-color: #1F2937 ;
@@ -19,22 +27,132 @@ body {
     font-size: 24px;
 }
 
-.hero{
-    display: flex;
+.hero{ 
     background-color: #1F2937 ;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
-img {
+
+.left-hero{
     height: 200px;
-    width: 300px;
-}
-
-
-.container {
+    width: 350px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9F1F8;
+}
+
+.hero-paragraphe{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.left-hero button {
+    height: 40px;
+    width: 85px;
+    background: royalblue;
+    border: 1px solid royalblue;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px; 
+}
+
+img {
+    height: 200px;
+    width: 400px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.info .title{
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.cubes{
+    display: flex;
+    gap: 52px;
+}
+
+
+.cube-1 {
+    display: flex;
+    flex-direction: column;
+    border-color: #1F2937;
+    border-radius: 10px;
+    border-width: 10px;
+}
+.rounded-cube{
+    border-radius: 10px;
+    border-width: 10px;
+}
+
+
+
+.text{
+    text-align: center;
+}
+
+.quote{
+    background-color: #E5E7EB;
+}
+
+.action{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 70px 180px 70px 180px;
+}
+
+.action .container{
+    background-color: #3883F6;
+    border-radius: 5px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    flex: 1;
+}
+
+.action .container .text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 6px;
+    flex-shrink: 0;
+    padding-left: 140px;
+}
+
+.action button {
+    height: 40px;
+    width: 110px;
+    background-color: #3883F6;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px; 
+}
+
+.action .title{
+    font-weight: 700;
 }
 
 .footer {
